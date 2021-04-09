@@ -1,4 +1,3 @@
-import './style.css';
 import { mapInit } from './map';
 
 import styles from './map-styles.json5';
