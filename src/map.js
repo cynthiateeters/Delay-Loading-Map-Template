@@ -24,10 +24,15 @@ const mapInit = (apiKey, styles, locations) => {
   wrapper.addEventListener('click', () => {
     wrapper.remove();
     loader.load().then(() => {
-      map = new google.maps.Map(document.getElementById('map'), {
+      const mapOptions = {
         center: center,
         zoom: zoom,
-      });
+        // put additional options here
+      };
+
+      map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+      // Put additional map google code here
     });
   });
 };
