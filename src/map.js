@@ -23,7 +23,6 @@ const mapInit = (apiKey, styles, locations) => {
   wrapper.addEventListener('click', () => {
     wrapper.remove();
     loader.load().then(() => {
-      zoom = 14;
       map = new google.maps.Map(document.getElementById('map'), {
         center: center,
         zoom: zoom,
